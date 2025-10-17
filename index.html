@@ -56,7 +56,8 @@
         <section id="inicio" class="hero-bg h-screen flex flex-col justify-center items-center text-center text-white p-6"> <!-- Seção principal (banner) que ocupa toda a altura da tela -->
             <div class="bg-black/50 p-8 rounded-lg"> <!-- Div com fundo semitransparente para destacar o texto -->
                 <h1 id="greeting" class="text-xl md:text-2xl font-roboto font-light mb-4 text-shadow">Carregando saudação...</h1> <!-- Título para a saudação dinâmica, com um texto provisório -->
-                <h2 class="text-5xl md:text-7xl lg:text-8xl anton-font mb-4 text-shadow">CARRASCOS DO ASFALTO</h2> <!-- Título principal do site -->
+                <!-- CORREÇÃO: Tamanho do título ajustado para ser menor em telas pequenas (text-4xl) e crescer progressivamente -->
+                <h2 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl anton-font mb-4 text-shadow">CARRASCOS DO ASFALTO</h2> <!-- Título principal do site -->
                 <p class="text-lg md:text-2xl font-roboto font-light max-w-3xl mx-auto text-shadow">Liberdade, respeito e irmandade sobre duas rodas.</p> <!-- Slogan ou subtítulo -->
             </div>
         </section>
@@ -65,7 +66,7 @@
         <section id="sobre" class="py-20 bg-gray-900"> <div class="container mx-auto px-6"> <h2 class="text-4xl anton-font text-center mb-12 text-white">
             SOBRE <span class="text-brand-red">NÓS</span>
         </h2> <div class="flex flex-col md:flex-row items-center gap-12"> <div class="md:w-1/2 flex justify-center items-center">
-                <img src="costas.jpeg" alt="Membros do motoclube reunidos" class="rounded-lg shadow-2xl w-full max-w-md h-auto object-cover" id="costas"> 
+                <img src="costas.jpeg" alt="Membros do motoclube reunidos" class="rounded-lg shadow-2xl w-full max-w-md h-auto object-cover"> 
             </div>
             
             <div class="md:w-1/2 text-lg text-gray-400 space-y-4 text-center md:text-left"> 
@@ -79,125 +80,112 @@
         </section>
 
         <!-- Seção "História" -->
-<section id="historia" class="py-20 bg-gray-800">
-    <div class="container mx-auto px-6">
-        <h2 class="text-4xl anton-font text-center mb-12 text-white">
-            NOSSA <span class="text-brand-red">HISTÓRIA</span>
-        </h2>
-        <!-- Container Flex para alinhar texto e imagem lado a lado -->
-        <div class="flex flex-col md:flex-row items-center gap-12">
-            <!-- Coluna do Texto (à esquerda) -->
-            <div class="md:w-1/2 text-center md:text-left">
-                <p class="text-lg text-gray-400">
-                    Nossa jornada começou com um pequeno grupo de amigos e um sonho em comum: viver a liberdade em duas rodas. O que era um passatempo de fim de semana rapidamente se transformou em algo maior, um pacto de irmandade forjado no calor do asfalto e no rugido dos motores. Enfrentamos longas estradas, tempestades e desafios, mas cada quilômetro percorrido apenas fortaleceu nossos laços. Hoje, somos um motoclube reconhecido, com uma história rica de aventuras, eventos beneficentes e, acima de tudo, amizade verdadeira.
-                </p>
+        <section id="historia" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl anton-font text-center mb-12 text-white">
+                    NOSSA <span class="text-brand-red">HISTÓRIA</span>
+                </h2>
+                <!-- Container Flex para alinhar texto e imagem lado a lado -->
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <!-- Coluna do Texto (à esquerda) -->
+                    <div class="md:w-1/2 text-center md:text-left">
+                        <p class="text-lg text-gray-400">
+                            Nossa jornada começou com um pequeno grupo de amigos e um sonho em comum: viver a liberdade em duas rodas. O que era um passatempo de fim de semana rapidamente se transformou em algo maior, um pacto de irmandade forjado no calor do asfalto e no rugido dos motores. Enfrentamos longas estradas, tempestades e desafios, mas cada quilômetro percorrido apenas fortaleceu nossos laços. Hoje, somos um motoclube reconhecido, com uma história rica de aventuras, eventos beneficentes e, acima de tudo, amizade verdadeira.
+                        </p>
+                    </div>
+                    <!-- Coluna da Imagem (à direita) -->
+                    <div class="md:w-1/2 flex justify-center items-center">
+                        <img src="familia.jpeg" alt="familia carrascos" class="rounded-lg shadow-2xl w-full max-w-md h-auto object-cover">
+                    </div>
+                </div>
+                <!-- Botão "FAÇA PARTE" -->
+                <div class="text-center mt-12">
+                    <a href="#contato" class="inline-block bg-brand-red text-white anton-font py-3 px-8 rounded-md hover:bg-red-800 transition-colors text-lg">
+                        FAÇA PARTE
+                    </a>
+                </div>
             </div>
-            <!-- Coluna da Imagem (à direita) -->
-            <!-- CORREÇÃO: Adicionadas as classes flex, justify-center e items-center para centralizar a imagem -->
-            <div class="md:w-1/2 flex justify-center items-center">
-                <img src="familia.jpg" alt="familia carrascos" class="rounded-lg shadow-2xl w-full max-w-md h-auto object-cover" id="costas">
-            </div>
-        </div>
-        <!-- Botão "FAÇA PARTE" -->
-        <div class="text-center mt-12">
-            <a href="#contato" class="inline-block bg-brand-red text-white anton-font py-3 px-8 rounded-md hover:bg-red-800 transition-colors text-lg">
-                FAÇA PARTE
-            </a>
-        </div>
-        
-    </div>
-</section>
+        </section>
 
-        <!-- Eventos Section -->
-        <section id="saiba mais" class="py-20 bg-gray-900"> <!-- Seção "Eventos" -->
-            <div class="container mx-auto px-6"> <!-- Container -->
-                <h2 class="text-4xl anton-font text-center mb-12 text-white">SAIBA <span class="text-brand-red">MAIS</span></h2> <!-- Título da seção -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> <!-- Layout em grade, responsivo para diferentes tamanhos de tela -->
-                    <!-- Event Card 1 -->
-                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300"> <!-- Card do evento com efeito de hover -->
+        <!-- Saiba Mais Section -->
+        <section id="saiba-mais" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl anton-font text-center mb-12 text-white">SAIBA <span class="text-brand-red">MAIS</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
                         <a href="mapa.html">
-                        <img src="mapa.png" alt="Mapa do motoclube" class="w-full h-56 object-cover"> <!-- Imagem do card -->
-                        <div class="p-6"> <!-- Conteúdo textual do card -->
-                            <h3 class="text-2xl anton-font text-white mb-2" id="h3">Mapa dos Carrascos</h3> <!-- Título do evento -->
-                            <p class="text-gray-400">Navegue pelas viagens dos Carrascos. Olhe o mapa e saiba por onde deixamos a nossa história !</p> <!-- Descrição do evento -->
+                        <img src="mapa.png" alt="Mapa do motoclube" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl anton-font text-white mb-2 text-center">Mapa dos Carrascos</h3>
+                            <p class="text-gray-400">Navegue pelas viagens dos Carrascos. Olhe o mapa e saiba por onde deixamos a nossa história !</p>
                         </a>
                         </div>
                     </div>
-                    <!-- Event Card 2 -->
-                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300"> <!-- Card do evento -->
+                    <!-- Card 2 -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
                         <a href="eventos.html">
-                        <img src="evento.jpeg" alt="foto do evento" class="w-full h-56 object-cover"> <!-- Imagem do card -->
-                        <div class="p-6"> <!-- Conteúdo textual do card -->
-                            <h3 class="text-2xl anton-font text-white mb-2" id="h3">Próximos eventos</h3> <!-- Título do evento -->
-                            <p class="text-gray-400">Fique ligado no nosso próximo evento !</p> <!-- Descrição do evento -->
+                        <img src="evento.jpeg" alt="foto do evento" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl anton-font text-white mb-2 text-center">Próximos eventos</h3>
+                            <p class="text-gray-400">Fique ligado no nosso próximo evento !</p>
                             </a>
                         </div>
                     </div>
-                    <!-- Event Card 3 -->
-                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300"> <!-- Card do evento -->
+                    <!-- Card 3 -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
                         <a href="integrantes.html">
-                        <img src="integrantes.JPG" alt="Integrantes do motoclube" class="w-full h-56 object-cover"> <!-- Imagem do card -->
-                        <div class="p-6"> <!-- Conteúdo textual do card -->
-                            <h3 class="text-2xl anton-font text-white mb-2" id="h3">Integrantes</h3> <!-- Título do evento -->
-                            <p class="text-gray-400">Conheça os integrantes que fazem parte dessa família Carrasco.</p> <!-- Descrição do evento -->
+                        <img src="integrantes.JPEG" alt="Integrantes do motoclube" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl anton-font text-white mb-2 text-center">Integrantes</h3>
+                            <p class="text-gray-400">Conheça os integrantes que fazem parte dessa família Carrasco.</p>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Seção "História" -->
-    <!-- Seção da Agenda de Eventos -->
-    <!-- Seção da Agenda de Eventos -->
-    <section id="agenda" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-4">
-            
-            <!-- Título da Seção -->
-            <h2 class="text-4xl anton-font text-center mb-12 text-white">
-                NOSSA <span class="text-brand-red">AGENDA</span>
-            </h2>
-            
-            <!-- Container da Agenda do Google com 80% de largura e centralizado -->
-            <div class="w-4/5 mx-auto bg-gray-700 p-2 sm:p-4 rounded-lg shadow-2xl">
-                <!-- 
-                Código de incorporação do Google Calendar.
-                Ele é responsivo e se ajustará a diferentes tamanhos de tela.
-                -->
-                <iframe 
-                    src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&bgcolor=%23374151&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=0&src=ZTllZjg4NTcyNGY3NDk1ODA3MDZiOWZhMDQ4N2Q3MzFkNWI5M2Q2ZTQ4OWVjZjVkYmVjZDRjMDFmMzQ4NzY3ZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23D50000" 
-                    style="border-width:0" 
-                    width="100%" 
-                    height="600" 
-                    frameborder="0" 
-                    scrolling="no">
-                </iframe>
+        
+        <!-- Seção da Agenda de Eventos -->
+        <section id="agenda" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl anton-font text-center mb-12 text-white">
+                    NOSSA <span class="text-brand-red">AGENDA</span>
+                </h2>
+                <!-- CORREÇÃO: A agenda agora é 100% da largura em telas pequenas e 80% (w-4/5) em telas médias (md) ou maiores -->
+                <div class="w-full md:w-4/5 mx-auto bg-gray-700 p-2 sm:p-4 rounded-lg shadow-2xl">
+                    <iframe 
+                        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&bgcolor=%23374151&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=0&src=ZTllZjg4NTcyNGY3NDk1ODA3MDZiOWZhMDQ4N2Q3MzFkNWI5M2Q2ZTQ4OWVjZjVkYmVjZDRjMDFmMzQ4NzY3ZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23D50000" 
+                        style="border-width:0" 
+                        width="100%" 
+                        height="600" 
+                        frameborder="0" 
+                        scrolling="no">
+                    </iframe>
+                </div>
             </div>
-            
-        </div>
-    </section>
-
-
+        </section>
 
         <!-- Contato Section -->
-        <section id="contato" class="py-20 bg-gray-900"> <!-- Seção "Contato" -->
-            <div class="container mx-auto px-6"> <!-- Container -->
-                <h2 class="text-4xl anton-font text-center mb-12 text-white">ENTRE EM <span class="text-brand-red">CONTATO</span></h2> <!-- Título da seção -->
-                <div class="max-w-lg mx-auto bg-gray-900 p-8 rounded-lg shadow-2xl"> <!-- Div que envolve o formulário -->
-                    <form action="#" method="POST"> <!-- Formulário de contato -->
-                        <div class="mb-4"> <!-- Campo do nome -->
-                            <label for="name" class="block text-gray-400 mb-2">Nome</label> <!-- Rótulo do campo -->
-                            <input type="text" id="name" name="name" class="w-full bg-gray-700 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-red" required> <!-- Campo de entrada de texto -->
+        <section id="contato" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl anton-font text-center mb-12 text-white">ENTRE EM <span class="text-brand-red">CONTATO</span></h2>
+                <div class="max-w-lg mx-auto bg-gray-900 p-8 rounded-lg shadow-2xl">
+                    <form action="https://formspree.io/f/YOUR_UNIQUE_CODE" method="POST">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-400 mb-2">Nome</label>
+                            <input type="text" id="name" name="name" class="w-full bg-gray-700 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-red" required>
                         </div>
-                        <div class="mb-4"> <!-- Campo do email -->
-                            <label for="email" class="block text-gray-400 mb-2">Email</label> <!-- Rótulo do campo -->
-                            <input type="email" id="email" name="email" class="w-full bg-gray-700 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-red" required> <!-- Campo de entrada de email -->
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-400 mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full bg-gray-700 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-red" required>
                         </div>
-                        <div class="mb-6"> <!-- Campo da mensagem -->
-                            <label for="message" class="block text-gray-400 mb-2">Mensagem</label> <!-- Rótulo do campo -->
-                            <textarea id="message" name="message" rows="5" class="w-full bg-gray-700 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-red" required></textarea> <!-- Área de texto para a mensagem -->
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-400 mb-2">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" class="w-full bg-gray-700 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-red" required></textarea>
                         </div>
-                        <div class="text-center"> <!-- Div para centralizar o botão -->
-                            <button type="submit" class="w-full bg-brand-red text-white anton-font py-3 px-8 rounded-md hover:bg-red-800 transition-colors text-lg">ENVIAR MENSAGEM</button> <!-- Botão de envio do formulário -->
+                        <div class="text-center">
+                            <button type="submit" class="w-full bg-brand-red text-white anton-font py-3 px-8 rounded-md hover:bg-red-800 transition-colors text-lg">ENVIAR MENSAGEM</button>
                         </div>
                     </form>
                 </div>
@@ -206,22 +194,22 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-black py-8"> <!-- Rodapé da página -->
-        <div class="container mx-auto px-6 text-center text-gray-500"> <!-- Container com conteúdo centralizado -->
-            <div class="flex justify-center space-x-6 mb-4"> <!-- Div para os ícones de redes sociais -->
-                <a href="https://open.spotify.com/playlist/5NNZzBQQHTKMr2Ng2jDlVe?si=zITbMSf5Qgq7Cd0mdS2xtg" target="_blank" class="text-2xl hover:text-brand-red transition-colors"><i class="fab fa-spotify"></i></a> <!-- Ícone do spotify -->
-                <a href="https://www.instagram.com/carrascosdoasfaltomc/" target="_blank" class="text-2xl hover:text-brand-red transition-colors"><i class="fab fa-instagram"></i></a> <!-- Ícone do Instagram -->
-                <a href="#" id="youtube-link" class="text-2xl hover:text-brand-red transition-colors"><i class="fab fa-youtube"></i></a> <!-- Ícone do YouTube -->
+    <footer class="bg-black py-8">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://open.spotify.com/playlist/5NNZzBQQHTKMr2Ng2jDlVe?si=zITbMSf5Qgq7Cd0mdS2xtg" target="_blank" class="text-2xl hover:text-green-500 transition-colors"><i class="fab fa-spotify"></i></a>
+                <a href="https://www.instagram.com/carrascosdoasfaltomc/" target="_blank" class="text-2xl hover:text-brand-red transition-colors"><i class="fab fa-instagram"></i></a>
+                <a href="#" id="youtube-link" class="text-2xl hover:text-brand-red transition-colors"><i class="fab fa-youtube"></i></a>
             </div>
-            <p>&copy; 2017 Carrascos do Asfalto MC. Todos os direitos reservados.</p> <!-- Texto de direitos autorais -->
+            <p>&copy; 2017 Carrascos do Asfalto MC. Todos os direitos reservados.</p>
         </div>
     </footer>
-<!-- "Aba" de Notificação (Toast) - Fica escondida até ser ativada pelo JS -->
-<div id="toast-notification" class="hidden fixed bottom-5 left-1/2 -translate-x-1/2 bg-gray-800 border border-brand-red text-white text-center py-3 px-6 rounded-lg shadow-lg transition-opacity duration-300">
-    Canal em desenvolvimento
-</div>
-    <!-- Link para o arquivo JavaScript externo -->
-    <script src="script.js"></script> <!-- Conecta este HTML ao arquivo de script script.js -->
+    
+    <div id="toast-notification" class="hidden fixed bottom-5 left-1/2 -translate-x-1/2 bg-gray-800 border border-brand-red text-white text-center py-3 px-6 rounded-lg shadow-lg transition-opacity duration-300">
+        Canal em desenvolvimento
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
 

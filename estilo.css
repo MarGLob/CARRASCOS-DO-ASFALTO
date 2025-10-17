@@ -29,16 +29,11 @@ h1, h2, h3, .anton-font {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adiciona uma sombra ao texto para destacá-lo do fundo */
 }
 
-#costas {
-    max-width:500px;
-    max-height: 500px;
-    width: auto;
-    height: auto;
-}
+/* CORREÇÃO: Removi os seletores #costas e #h3 daqui.
+  É melhor prática controlar esses estilos com classes do Tailwind diretamente no HTML
+  para manter o código consistente. Você já está fazendo isso corretamente.
+*/
 
-#h3 {
-    text-align: center;
-}
 /* Estilos para a notificação (Toast) */
 #toast-notification {
     /* Garante que a notificação apareça sobre todos os outros conteúdos */
