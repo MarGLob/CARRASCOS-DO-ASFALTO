@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma da página -->
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para responsividade -->
+    <title>EVENTOS - Carrascos do Asfalto MC</title> <!-- Título específico da página de eventos -->
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Importa o Tailwind CSS -->
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Importa as mesmas fontes -->
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- Importa Font Awesome para ícones -->
+
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="estilo.css"> <!-- Link para os mesmos estilos -->
+</head>
+<body class="bg-brand-dark text-gray-300"> <!-- Corpo da página com o mesmo estilo base -->
+
+    <!-- Header & Navigation -->
+    <!-- É uma boa prática reutilizar o mesmo cabeçalho em todas as páginas para consistência -->
+    <header id="header" class="bg-black/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Este link agora volta para a página inicial -->
+            <a href="index.html" class="text-2xl anton-font text-white hover:text-brand-red transition-colors">
+                Carrascos do Asfalto-<span class="text-brand-red">MC</span>
+            </a>
+            
+            <nav class="hidden md:flex space-x-8">
+                 <!-- Os links aqui apontam para a página inicial e suas seções -->
+                <a href="index.html#sobre" class="text-gray-300 hover:text-brand-red transition-colors uppercase font-semibold">Sobre Nós</a>
+                <a href="index.html#historia" class="text-gray-300 hover:text-brand-red transition-colors uppercase font-semibold">História</a>
+                <a href="index.html#saiba-mais" class="text-brand-red uppercase font-semibold">Saiba mais</a> <!-- Link ativo para a página atual -->
+                <a href="index.html#contato" class="text-gray-300 hover:text-brand-red transition-colors uppercase font-semibold">Contato</a>
+            </nav>
+
+             <!-- O menu mobile também precisa ser atualizado -->
+            <button id="mobile-menu-button" class="md:hidden text-white text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-black/90">
+            <a href="index.html#sobre" class="block text-center py-3 px-4 text-gray-300 hover:bg-brand-red hover:text-white transition-colors uppercase">Sobre Nós</a>
+            <a href="index.html#historia" class="block text-center py-3 px-4 text-gray-300 hover:bg-brand-red hover:text-white transition-colors uppercase">História</a>
+            <a href="eventos.html" class="block text-center py-3 px-4 text-brand-red hover:bg-brand-red hover:text-white transition-colors uppercase">Eventos</a>
+            <a href="index.html#contato" class="block text-center py-3 px-4 text-gray-300 hover:bg-brand-red hover:text-white transition-colors uppercase">Contato</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção de Cabeçalho da Página de Eventos -->
+        <section class="hero-bg h-96 flex flex-col justify-center items-center text-center text-white p-6 pt-24"> <!-- Altura menor que a da página inicial -->
+            <div class="bg-black/50 p-8 rounded-lg">
+                <h1 class="text-5xl md:text-7xl anton-font text-shadow">AGENDA DE EVENTOS</h1>
+                <p class="text-lg md:text-xl font-roboto mt-2 text-shadow">Fique por dentro de todos os nossos encontros, passeios e celebrações.<BR>PÁGINA EM CONSTRUÇÃO</p>
+            </div>
+        </section>
+
+        <!-- Conteúdo da Página de Eventos -->
+        <section class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <!-- Evento Detalhado 1 -->
+                <div class="bg-gray-800 rounded-lg shadow-lg p-8 mb-10 flex flex-col md:flex-row items-center gap-8">
+                    <img src="evento.jpeg" alt="Evento encontro nacional de pitangui" class="w-full md:w-1/3 h-auto rounded-md object-cover">
+                    <div class="md:w-2/3">
+                        <h2 class="text-3xl anton-font text-white mb-3">1° ENCONTRO nacional DE pitangui - MG</h2>
+                        <p class="text-brand-red font-bold mb-4">10 e 11 de Abril, 10:00 - Parque de Exposições</p>
+                        <p class="text-gray-400">PÁGINA .. EM .. CONTRUÇÃO ..</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- O rodapé também pode ser reutilizado -->
+    <footer class="bg-black py-8">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://open.spotify.com/playlist/5NNZzBQQHTKMr2Ng2jDlVe?si=zITbMSf5Qgq7Cd0mdS2xtg" target="_blank" class="text-2xl hover:text-brand-red transition-colors"><i class="fab fa-spotify"></i></a> <!-- Ícone do spotify -->
+                <a href="https://www.instagram.com/carrascosdoasfaltomc/" target="_blank" class="text-2xl hover:text-brand-red transition-colors"><i class="fab fa-instagram"></i></a>
+                <a href="#" id="youtube-link" class="text-2xl hover:text-brand-red transition-colors"><i class="fab fa-youtube"></i></a> <!-- Ícone do YouTube -->
+            </div>
+            <p>&copy; 2017 Carrascos do Asfalto MC. Todos os direitos reservados.</p> <!-- Texto de direitos autorais -->
+        </div>
+    </footer>
+<!-- "Aba" de Notificação (Toast) - Fica escondida até ser ativada pelo JS -->
+<div id="toast-notification" class="hidden fixed bottom-5 left-1/2 -translate-x-1/2 bg-gray-800 border border-brand-red text-white text-center py-3 px-6 rounded-lg shadow-lg transition-opacity duration-300">
+    Canal em desenvolvimento
+</div>
+    <!-- Link para o mesmo arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

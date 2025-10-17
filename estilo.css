@@ -1,0 +1,57 @@
+/* Custom styles to complement Tailwind */
+/* Estilos personalizados para complementar o Tailwind */
+
+body {
+    font-family: 'Roboto', sans-serif; /* Define a fonte padrão para 'Roboto' */
+    background-color: #111827; /* Define uma cor de fundo escura (equivalente a bg-gray-900 do Tailwind) */
+    color: #d1d5db; /* Define a cor do texto padrão para um cinza claro (equivalente a text-gray-300 do Tailwind) */
+}
+
+h1, h2, h3, .anton-font {
+    font-family: 'Anton', sans-serif; /* Define a fonte 'Anton' para títulos e elementos com a classe .anton-font */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    letter-spacing: 1px; /* Adiciona um pequeno espaçamento entre as letras */
+}
+
+.hero-bg {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('logo.png'); /* Define uma imagem de fundo com um gradiente escuro por cima para melhorar a legibilidade do texto */
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a área do elemento */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-attachment: fixed; /* Fixa a imagem de fundo durante a rolagem (efeito parallax) */
+}
+
+.section-bg {
+    background-color: rgba(17, 24, 39, 0.8); /* Define uma cor de fundo semitransparente */
+    backdrop-filter: blur(5px); /* Aplica um efeito de desfoque nos elementos atrás desta camada */
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adiciona uma sombra ao texto para destacá-lo do fundo */
+}
+
+#costas {
+    max-width:500px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+}
+
+#h3 {
+    text-align: center;
+}
+/* Estilos para a notificação (Toast) */
+#toast-notification {
+    /* Garante que a notificação apareça sobre todos os outros conteúdos */
+    z-index: 1000;
+    /* Começa invisível para a animação funcionar */
+    opacity: 0;
+    /* Remove a classe 'hidden' para que a opacidade controle a visibilidade */
+    display: block; 
+    /* Transição suave para a propriedade de opacidade */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Classe que o JavaScript adicionará para mostrar a notificação */
+#toast-notification.show {
+    opacity: 1;
+}
