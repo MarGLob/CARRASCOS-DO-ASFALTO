@@ -135,7 +135,7 @@
                     <!-- Card 3 -->
                     <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
                         <a href="integrantes.html">
-                        <img src="integrantes.jpeg" alt="Integrantes do motoclube" class="w-full h-56 object-cover">
+                        <img src="integrantes.JPEG" alt="Integrantes do motoclube" class="w-full h-56 object-cover">
                         <div class="p-6">
                             <h3 class="text-2xl anton-font text-white mb-2 text-center">Integrantes</h3>
                             <p class="text-gray-400">Conheça os integrantes que fazem parte dessa família Carrasco.</p>
@@ -166,31 +166,39 @@
             </div>
         </section>
 
-        <!-- Contato Section -->
-        <section id="contato" class="py-20 bg-gray-900">
-            <div class="container mx-auto px-6">
-                <h2 class="text-4xl anton-font text-center mb-12 text-white">ENTRE EM <span class="text-brand-red">CONTATO</span></h2>
-                <div class="max-w-lg mx-auto bg-gray-900 p-8 rounded-lg shadow-2xl">
-                    <form action="https://formspree.io/f/YOUR_UNIQUE_CODE" method="POST">
-                        <div class="mb-4">
-                            <label for="name" class="block text-gray-400 mb-2">Nome</label>
-                            <input type="text" id="name" name="name" class="w-full bg-gray-700 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-red" required>
-                        </div>
-                        <div class="mb-4">
-                            <label for="email" class="block text-gray-400 mb-2">Email</label>
-                            <input type="email" id="email" name="email" class="w-full bg-gray-700 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-red" required>
-                        </div>
-                        <div class="mb-6">
-                            <label for="message" class="block text-gray-400 mb-2">Mensagem</label>
-                            <textarea id="message" name="message" rows="5" class="w-full bg-gray-700 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-red" required></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="w-full bg-brand-red text-white anton-font py-3 px-8 rounded-md hover:bg-red-800 transition-colors text-lg">ENVIAR MENSAGEM</button>
-                        </div>
-                    </form>
+            <!-- Contato Section -->
+    <section id="contato" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl anton-font text-center mb-12 text-white">ENTRE EM <span class="text-brand-red">CONTATO</span></h2>
+            <div class="max-w-lg mx-auto bg-gray-900 p-8 rounded-lg shadow-2xl">
+                <!-- CORREÇÃO: Removido o action e method. Adicionado um ID. -->
+                <form id="contact-form">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-400 mb-2">Nome</label>
+                        <input type="text" id="name" name="name" class="w-full bg-gray-700 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-red" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-400 mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full bg-gray-700 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-red" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-400 mb-2">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" class="w-full bg-gray-700 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-red" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <!-- CORREÇÃO: O botão agora tem um ID para mostrar o status de "Enviando..." -->
+                        <button type="submit" id="submit-button" class="w-full bg-brand-red text-white anton-font py-3 px-8 rounded-md hover:bg-red-800 transition-colors text-lg">ENVIAR MENSAGEM</button>
+                    </div>
+                </form>
+                <!-- Mensagem de sucesso, inicialmente escondida -->
+                <div id="success-message" class="hidden mt-4 text-center bg-green-800/50 border border-green-600 text-green-300 p-3 rounded-md">
+                    Mensagem enviada com sucesso! Agradecemos o contato.
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+
     </main>
 
     <!-- Footer -->
@@ -212,8 +220,4 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
 
